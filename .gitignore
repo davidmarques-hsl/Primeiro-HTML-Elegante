@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production
+dist/
+build/
+
+# IDE e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Ambientes
+.env
+.env.local
+.env.*.local
+
+# Arquivos de teste
+*.test.js
+coverage/
+
+# Arquivos temporários
+*.tmp
+*.temp
