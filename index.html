@@ -29,125 +29,53 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
+        <section class="dashboard">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        Bem-vindo ao <span class="gradient-text">Futuro</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Uma experiência moderna e elegante para você explorar possibilidades infinitas
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary">Começar Agora</button>
-                        <button class="btn btn-secondary">Saiba Mais</button>
-                    </div>
+                <div class="dashboard-header">
+                    <h1 class="hero-title">Painel Executivo — Fornecedores & Faturamento</h1>
+                    <p class="hero-subtitle">Resumo rápido com KPIs, tendências e insights para diretoria</p>
                 </div>
-                <div class="hero-visual">
-                    <div class="floating-card card-1">
-                        <div class="card-icon">✨</div>
-                        <div class="card-text">Inovação</div>
-                    </div>
-                    <div class="floating-card card-2">
-                        <div class="card-icon">🚀</div>
-                        <div class="card-text">Performance</div>
-                    </div>
-                    <div class="floating-card card-3">
-                        <div class="card-icon">💎</div>
-                        <div class="card-text">Qualidade</div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- About Section -->
-        <section class="about" id="sobre">
-            <div class="container">
-                <h2 class="section-title">Sobre Este Projeto</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Este é um projeto de demonstração que combina design moderno com funcionalidade intuitiva. 
-                            Criado com as melhores práticas de desenvolvimento web, oferecendo uma experiência 
-                            de usuário excepcional.
-                        </p>
-                        <p>
-                            Navegue, explore e descubra o que você pode fazer com tecnologia e criatividade.
-                        </p>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-value">R$ 959,92 <span class="kpi-suffix">Mi</span></div>
+                        <div class="kpi-label">Faturamento total</div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Responsivo</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">∞</div>
-                            <div class="stat-label">Escalável</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">⚡</div>
-                            <div class="stat-label">Rápido</div>
-                        </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">12,95% <span class="kpi-suffix small">YoY</span></div>
+                        <div class="kpi-label">Crescimento YoY</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">28% </div>
+                        <div class="kpi-label">Top 10 Fornecedores %</div>
+                    </div>
+                    <div class="kpi-card subdued">
+                        <div class="kpi-value">R$ 295 Mi</div>
+                        <div class="kpi-label">Impacto Top10 (aprox.)</div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Features Section -->
-        <section class="features" id="recursos">
-            <div class="container">
-                <h2 class="section-title">Recursos Principais</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🎨</div>
-                        <h3>Design Moderno</h3>
-                        <p>Interface elegante com componentes visuais sofisticados e intuitivos</p>
+                <div class="dashboard-grid">
+                    <div class="chart-card">
+                        <h3>Top Fornecedores por Faturamento</h3>
+                        <canvas id="barChart" height="220"></canvas>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📱</div>
-                        <h3>Totalmente Responsivo</h3>
-                        <p>Funciona perfeitamente em todos os dispositivos e tamanhos de tela</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚙️</div>
-                        <h3>Fácil Customização</h3>
-                        <p>Código limpo e bem estruturado para adaptar conforme suas necessidades</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Seguro</h3>
-                        <p>Desenvolvido com boas práticas de segurança e performance otimizada</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Alto Desempenho</h3>
-                        <p>Carregamento rápido e animações suaves para melhor experiência</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🌐</div>
-                        <h3>Compatibilidade</h3>
-                        <p>Compatível com todos os navegadores modernos</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contato">
-            <div class="container">
-                <h2 class="section-title">Entre em Contato</h2>
-                <p class="contact-subtitle">Tem dúvidas? Vamos conversar!</p>
-                <div class="contact-buttons">
-                    <a href="https://github.com" class="contact-link">
-                        <span>GitHub</span> →
-                    </a>
-                    <a href="mailto:seu-email@exemplo.com" class="contact-link">
-                        <span>Email</span> →
-                    </a>
-                    <a href="https://linkedin.com" class="contact-link">
-                        <span>LinkedIn</span> →
-                    </a>
+                    <div class="insights-card">
+                        <h3>Insights Rápidos</h3>
+                        <ol>
+                            <li>Faturamento cresceu 8,33% entre Jan–Mai 2026 vs mesmo período anterior.</li>
+                            <li>Top 10 fornecedores concentram ~28% do faturamento total (~R$ 295 Mi).</li>
+                            <li>Fornecedores mais relevantes: ONCO PROD, MEDISERVICE, CM HOSPITALAR.</li>
+                        </ol>
+                        <h4>Período</h4>
+                        <p>01/01/2025 — 31/05/2025</p>
+                    </div>
+
+                    <div class="chart-card wide">
+                        <h3>Oscilações Mensais</h3>
+                        <canvas id="lineChart" height="160"></canvas>
+                    </div>
                 </div>
             </div>
         </section>
@@ -160,6 +88,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Smooth scroll para links de navegação
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -192,6 +121,59 @@
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'all 0.6s ease';
             observer.observe(el);
+        });
+
+        // Dados de exemplo (substitua pelos seus dados reais)
+        const barLabels = ['ONCO PROD', 'MEDISERVICE', 'CM HOSPITALAR', 'MEDCER', 'ALELO', 'ELFA', 'MENINO JESUS', 'BRS', 'SHE', 'ROCHE'];
+        const barData = [65, 48, 42, 36, 30, 26, 22, 18, 15, 12];
+
+        const barCtx = document.getElementById('barChart').getContext('2d');
+        new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: barLabels,
+                datasets: [{
+                    label: 'Faturamento (R$ Mi)',
+                    data: barData,
+                    backgroundColor: 'rgba(99,102,241,0.9)'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: 'var(--text-secondary)' } },
+                    y: { ticks: { color: 'var(--text-secondary)' } }
+                }
+            }
+        });
+
+        const lineLabels = ['janeiro', 'fevereiro', 'março', 'abril', 'maio'];
+        const lineData = [185, 187, 192, 190, 205];
+
+        const lineCtx = document.getElementById('lineChart').getContext('2d');
+        new Chart(lineCtx, {
+            type: 'line',
+            data: {
+                labels: lineLabels,
+                datasets: [{
+                    label: 'Soma de Valor total (R$ Mi)',
+                    data: lineData,
+                    borderColor: 'rgba(99,102,241,1)',
+                    backgroundColor: 'rgba(99,102,241,0.08)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: 'var(--text-secondary)' } },
+                    y: { ticks: { color: 'var(--text-secondary)' } }
+                }
+            }
         });
     </script>
 </body>
